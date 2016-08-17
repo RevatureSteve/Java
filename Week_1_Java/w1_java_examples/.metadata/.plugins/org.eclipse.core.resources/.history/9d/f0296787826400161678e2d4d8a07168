@@ -1,0 +1,22 @@
+package com.revature.pojos;
+
+import com.revature.abstracts.AbstractVehicle;
+
+public class Honda extends AbstractVehicle {
+
+	public Honda(String model, int doors, int maxMph)
+	
+	@Override
+	protected void drive() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void brake() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

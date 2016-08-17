@@ -1,0 +1,20 @@
+package com.revature.abstracts;
+
+public abstract class AbstractVehicle {
+
+	protected String model;
+	protected int doors;
+	public boolean isDriving;
+	protected int maxMph;
+	
+	//Common method for all 
+	protected void startEngine(){
+		System.out.println("Engine has started");
+	}
+	
+	//different implementation for each subclass
+	protected abstract void drive();
+	
+	public abstract void brake();
+	
+}

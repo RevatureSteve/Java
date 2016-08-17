@@ -1,0 +1,17 @@
+package com.revature.autoboxing;
+
+public class Autoboxing {
+
+	public static void main(String[] args) {
+
+
+			/*
+			 * Prior to Java 1.5
+			 */
+		
+			int num1 = 5;
+			Integer num2 = new Integer(num1);
+
+	}
+
+}

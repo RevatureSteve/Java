@@ -1,0 +1,34 @@
+package com.revature.autoboxing;
+
+public class Autoboxing {
+
+	public static void main(String[] args) {
+
+
+			/*
+			 * Prior to Java 1.5
+			 */
+		
+			
+			/*
+			 * Boxing
+			 */
+			int num1 = 5;
+			Integer num2 = new Integer(num1);
+			
+			/*
+			 * Unboxing
+			 */
+			Integer num3 = new Integer(5);
+			int num4 = num3.intValue();
+			
+			/*
+			 * Autoboxing - Since Java 1.5
+			 */
+			int num5 = 5;
+			Integer num6 = num5;
+			
+
+	}
+
+}

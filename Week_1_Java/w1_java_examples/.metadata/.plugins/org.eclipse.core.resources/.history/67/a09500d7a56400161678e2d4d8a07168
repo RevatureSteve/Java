@@ -1,0 +1,23 @@
+package com.revature.casting;
+
+class Parent{
+	public void whichClass(){ System.out.println("parent"); }
+}
+
+class Child extends Parent {
+	public void which(){  System.out.println("child"); }
+}
+
+class GrandChild extends Child {
+	public void which(){  System.out.println("child"); }
+}
+
+public class CastingObjects {
+
+	public static void main(String[] args) {
+		Parent parent = new Parent();
+		parent.whichClass();
+
+	}
+
+}

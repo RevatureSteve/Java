@@ -1,0 +1,13 @@
+package com.revature.collections;
+
+public class SetExample {
+
+	public static void main(String[] args) {
+		/*
+		 * HashSet
+		 */
+		Set<Integer> hashSet = new HashSet<Integer>();
+
+	}
+
+}

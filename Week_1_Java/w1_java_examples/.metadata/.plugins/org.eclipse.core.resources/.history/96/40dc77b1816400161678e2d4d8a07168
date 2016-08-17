@@ -1,0 +1,14 @@
+package com.revature.abstracts;
+
+public abstract class AbstractVehicle {
+
+	protected String model;
+	protected int doors;
+	public boolean isDriving;
+	protected int maxMph;
+	
+	protected void startEngine(){
+		System.out.println("Engine has started");
+	}
+	
+}

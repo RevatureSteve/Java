@@ -1,0 +1,17 @@
+package com.revature.main;
+
+import com.revature.pojos.Honda;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Honda civic = new Honda("Civic",2,125);
+		
+		System.out.println(civic.getMaxMph());
+		System.out.println(civic.isDriving);
+		civic.drive();
+		System.out.println(civic.isDriving);
+
+	}
+
+}
