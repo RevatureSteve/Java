@@ -1,0 +1,6 @@
+Hello world
+again
+Buffered Streams are faster and easier to use
+Hello world
+again
+Buffered Streams are faster and easier to use
