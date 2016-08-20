@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bank>
+    <user>
+        <balance>1314.0</balance>
+        <password>123</password>
+        <username>john</username>
+    </user>
+    <user>
+        <balance>14.11</balance>
+        <password>456</password>
+        <username>amy</username>
+    </user>
+    <user>
+        <balance>1.0000000000001137</balance>
+        <password>789</password>
+        <username>austin</username>
+    </user>
+    <user>
+        <balance>100.01</balance>
+        <password>010</password>
+        <username>katie</username>
+    </user>
+    <user>
+        <balance>99.99</balance>
+        <password>321</password>
+        <username>courtney</username>
+    </user>
+</bank>
