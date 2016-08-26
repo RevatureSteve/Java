@@ -1,8 +1,0 @@
-package com.revature.abstracts;
-
-public interface Turbo {
-
-	int turboSpeed = 10; //implicity public static final
-	
-	void increaseVehicleSpeed(); //implicitly public abstract
-}

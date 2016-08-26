@@ -40,6 +40,9 @@ public class FlashCardDaoImpl implements DAO {
 		//Preparedstatement
 		try (Connection connect = ConnectionUtil.getConnection();){
 
+			//Set autoCommit to false
+			connect.setAutoCommit(false); 
+			
 			//Add primaryKey String Array to our prepared statement
 			String[] primaryKeys = new String[1];
 			primaryKeys[0] = "fc_id";
@@ -48,7 +51,10 @@ public class FlashCardDaoImpl implements DAO {
 			ps.setString(1, flashCard.getQuestion());
 			ps.setString(2, flashCard.getAnswer());
 			
-			int numRowsAffected = ps.executeUpdate();
+			//By default will auto commit, must set to false
+			//When trying to run a transaction - multiple sql statement
+			// where you want all or nothing!
+			int numRowsAffected = ps.executeUpdate(); 
 			
 			System.out.println("Num of Rows affected - PreparedStatement: " + numRowsAffected);
 			
@@ -58,6 +64,9 @@ public class FlashCardDaoImpl implements DAO {
 			while(generatedKeys.next()){
 				System.out.println(generatedKeys.getInt(1)); //column number
 			}
+			
+			//With auto commit set to false
+			connect.commit();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

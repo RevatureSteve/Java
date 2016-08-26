@@ -64,14 +64,16 @@ END;
 /
 
 
-CREATE OR REPLACE PROCEDURE insert_fc_procedure(some_q IN VARCHAR2, some_a IN flash_cards.fc_answer%TYPE)
+CREATE OR REPLACE PROCEDURE insert_fc_procedure(some_q IN VARCHAR2, some_a IN flash_cards.fc_answer%TYPE, fc_error_msg OUT VARCHAR2)
 IS
 BEGIN
   
   INSERT INTO flash_cards(fc_question, fc_answer) VALUES(some_q, some_a);
-  
+   DBMS_OUTPUT.PUT_LINE('insert a flash card');
   COMMIT;
-
+EXCEPTION
+ WHEN OTHERS THEN
+  fc_error_msg := SQLERRM;
 END;
 /
 
@@ -112,7 +114,7 @@ BEGIN
 END;
 /
 
-
+commit;
 DECLARE
   fc_cursor SYS_REFCURSOR;
   someId flash_cards.fc_id%TYPE;
@@ -192,11 +194,12 @@ BEGIN
 
 END;
 /
+UPDATE flash_cards 
+SET FC_ANSWER = 43
+, FC_QUESTION = 'hello' WHERE FC_ID = 5;
 
 
-
-
-
+commit;
 
 
 

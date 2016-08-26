@@ -1,5 +1,0 @@
-INDEX VERSION 1.127+C:\Users\Steve_Revature\my_git_repos\1608_Aug15_Java_Steven\Week_1_Java\w1_java_examples\.metadata\.plugins\org.eclipse.jdt.core
-479045491.index
-1104649673.index
-1367631769.index
-167542513.index
