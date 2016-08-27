@@ -1,0 +1,26 @@
+Banking Assignment 2
+A user can login - has one account
+A user can withdraw & deposit
+A user can view balance
+A user can view tx history
+A user can execute multiple tx in one session
+A user can logout - ends program
+
+
+Persis data to Oracle DB
+Use DAO Design pattern
+Persist data during every transaction, not on logout
+
+Use at least:
+1 statement
+2 Prepared statements
+1 Callable statement
+
+Write at least 2 JUnit Tests
+-Not for getters & Setters
+
+Include SQL Scripts
+
+5 Points added to any future exam if you can write an sql injection example
+
+Due Saturday By 1pm

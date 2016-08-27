@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Let's Add CSS</title>
+<style type="text/css">
+.redStuff {
+	background-color: red;
+	color: white;
+	font-size: 30px;
+}
+
+.blueStuff{
+	background-color: lightblue;
+}
+
+.redStuff, .blueStuff{
+	margin: 5px;
+	padding: 5px;
+	width: 20%;
+}
+
+p{
+	color: blue;
+}
+
+/* p is child of div*/
+div p{
+	font-size: large;
+}
+
+div div p{
+	font-family: cursive;
+}
+
+#parentDiv p {
+	background-color: aqua;
+}
+
+#parentDiv > p {
+	background-color: fuchsia;
+}
+
+</style>
+
+</head>
+<body>
+	<div id="firstDiv" class="redStuff">Hello, world 1 redstuff class
+	</div>
+
+	<div id="secondDiv" class="blueStuff">Hello, world 2 bluestuff
+		class</div>
+
+	<div id="thirdDiv" class="blueStuff">Hello, world 3 bluestuff
+		class</div>
+
+	<div id="fourthDiv" class="blueStuff">Hello, world 4 bluestuff
+		class</div>
+
+	<div id="parentDiv">
+		
+		<p>p child of parentDiv no inline style</p>
+		<div>
+			<p>p child of div, which is a child of another div</p>
+		</div>
+	</div>
+	
+	<p style="width: 400px;">p child of body with inline styling</p>
+
+</body>
+</html>
