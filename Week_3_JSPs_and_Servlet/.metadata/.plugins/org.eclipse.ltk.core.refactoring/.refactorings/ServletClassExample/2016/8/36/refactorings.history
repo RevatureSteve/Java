@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;LoginSession.java&apos; to &apos;ServletClassExample/src/com.revature.session&apos;&#x0D;&#x0A;- Original project: &apos;ServletClassExample&apos;&#x0D;&#x0A;- Destination element: &apos;ServletClassExample/src/com.revature.session&apos;&#x0D;&#x0A;- Original element: &apos;com.revature.servlets.LoginSession.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.revature.session" element1="/src&lt;com.revature.servlets{LoginSession.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1472585553671" units="1" version="1.0"/>
+</session>

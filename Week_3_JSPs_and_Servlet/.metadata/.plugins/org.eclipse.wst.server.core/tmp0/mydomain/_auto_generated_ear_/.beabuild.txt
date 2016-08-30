@@ -1,0 +1,3 @@
+C\:/Users/Steve_Revature/my_git_repos/1608_Aug15_Java_Steven/Week_3_JSPs_and_Servlet/ServletClassExample/WebContent = ServletClassExample.war
+C\:/Users/Steve_Revature/my_git_repos/1608_Aug15_Java_Steven/Week_3_JSPs_and_Servlet/.metadata/.plugins/org.eclipse.core.resources/ServletClassExample/build/weboutput = ServletClassExample.war
+C\:/Users/Steve_Revature/my_git_repos/1608_Aug15_Java_Steven/Week_3_JSPs_and_Servlet/ServletClassExample/build/classes = ServletClassExample.war/WEB-INF/classes
