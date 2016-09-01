@@ -8,8 +8,14 @@
 </module>
 <module>
    <web>
-       <web-uri>ServletClassExample.war</web-uri>
-       <context-root>ServletClassExample</context-root>
+       <web-uri>JSPClassScopes.war</web-uri>
+       <context-root>JSPClassScopes</context-root>
+   </web>
+</module>
+<module>
+   <web>
+       <web-uri>JSTLExample.war</web-uri>
+       <context-root>JSTLExample</context-root>
    </web>
 </module>
 
