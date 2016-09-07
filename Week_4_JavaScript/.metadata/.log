@@ -1,0 +1,1255 @@
+!SESSION 2016-09-05 15:12:07.169 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Steve_Revature\my_git_repos\1608_Aug15_Java_Steven\Week_4_JavaScript
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-09-05 15:12:16.984
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Steve_Revature'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY oracle.eclipse.tools.maf.dt.v20 1 0 2016-09-05 15:13:29.781
+!MESSAGE Runtime bundle is not installed for MAF Runtime 2.0. Go to Help->Install New Software and install this version in order to use it. Migration to a newer version is also possible from project's context menu (Configure > Migrate MAF Application...)
+
+!ENTRY org.eclipse.jdt.launching 4 4 2016-09-05 15:13:29.786
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDC contributed by oracle.eclipse.tools.adf.mobile: Associated MAF runtime is not installed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDC contributed by oracle.eclipse.tools.adf.mobile: Associated MAF runtime is not installed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1393)
+	at org.eclipse.jdt.launching.JavaRuntime.addVMExtensions(JavaRuntime.java:1580)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2719)
+	at org.eclipse.jdt.launching.JavaRuntime.getVMInstallTypes(JavaRuntime.java:539)
+	at org.eclipse.jdt.internal.launching.environments.EnvironmentsManager.initializeCompatibilities(EnvironmentsManager.java:241)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironment.init(ExecutionEnvironment.java:181)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironment.getDefaultVM(ExecutionEnvironment.java:223)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.resolveVM(JREContainerInitializer.java:175)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.resolveVM(JREContainerInitializer.java:142)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.initialize(JREContainerInitializer.java:59)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2868)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:2774)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2812)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1895)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3298)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2693)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2857)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1962)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.getRootInfos(DeltaProcessingState.java:311)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.initializeRoots(DeltaProcessingState.java:256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.processResourceDelta(DeltaProcessor.java:1858)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2059)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2016-09-05 15:13:29.787
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDC contributed by oracle.eclipse.tools.adf.mobile: Associated MAF runtime is not installed.
+
+!ENTRY oracle.eclipse.tools.maf.dt.v20 1 0 2016-09-05 15:13:29.793
+!MESSAGE Runtime bundle is not installed for MAF Runtime 2.0. Go to Help->Install New Software and install this version in order to use it. Migration to a newer version is also possible from project's context menu (Configure > Migrate MAF Application...)
+
+!ENTRY org.eclipse.jdt.launching 4 4 2016-09-05 15:13:29.798
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv20 contributed by oracle.eclipse.tools.maf.dt.v20: Associated MAF runtime is not installed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv20 contributed by oracle.eclipse.tools.maf.dt.v20: Associated MAF runtime is not installed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1393)
+	at org.eclipse.jdt.launching.JavaRuntime.addVMExtensions(JavaRuntime.java:1580)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2719)
+	at org.eclipse.jdt.launching.JavaRuntime.getVMInstallTypes(JavaRuntime.java:539)
+	at org.eclipse.jdt.internal.launching.environments.EnvironmentsManager.initializeCompatibilities(EnvironmentsManager.java:241)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironment.init(ExecutionEnvironment.java:181)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironment.getDefaultVM(ExecutionEnvironment.java:223)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.resolveVM(JREContainerInitializer.java:175)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.resolveVM(JREContainerInitializer.java:142)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.initialize(JREContainerInitializer.java:59)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2868)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:2774)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2812)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1895)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3298)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2693)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2857)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1962)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.getRootInfos(DeltaProcessingState.java:311)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.initializeRoots(DeltaProcessingState.java:256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.processResourceDelta(DeltaProcessor.java:1858)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2059)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2016-09-05 15:13:29.799
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv20 contributed by oracle.eclipse.tools.maf.dt.v20: Associated MAF runtime is not installed.
+
+!ENTRY oracle.eclipse.tools.maf.dt.v201 1 0 2016-09-05 15:13:29.805
+!MESSAGE Runtime bundle is not installed for MAF Runtime 2.0.1. Go to Help->Install New Software and install this version in order to use it. Migration to a newer version is also possible from project's context menu (Configure > Migrate MAF Application...)
+
+!ENTRY org.eclipse.jdt.launching 4 4 2016-09-05 15:13:29.809
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv201 contributed by oracle.eclipse.tools.maf.dt.v201: Associated MAF runtime is not installed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv201 contributed by oracle.eclipse.tools.maf.dt.v201: Associated MAF runtime is not installed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1393)
+	at org.eclipse.jdt.launching.JavaRuntime.addVMExtensions(JavaRuntime.java:1580)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2719)
+	at org.eclipse.jdt.launching.JavaRuntime.getVMInstallTypes(JavaRuntime.java:539)
+	at org.eclipse.jdt.internal.launching.environments.EnvironmentsManager.initializeCompatibilities(EnvironmentsManager.java:241)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironment.init(ExecutionEnvironment.java:181)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironment.getDefaultVM(ExecutionEnvironment.java:223)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.resolveVM(JREContainerInitializer.java:175)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.resolveVM(JREContainerInitializer.java:142)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.initialize(JREContainerInitializer.java:59)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2868)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:2774)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2812)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1895)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3298)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2693)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2857)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1962)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.getRootInfos(DeltaProcessingState.java:311)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.initializeRoots(DeltaProcessingState.java:256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.processResourceDelta(DeltaProcessor.java:1858)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2059)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2016-09-05 15:13:29.809
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv201 contributed by oracle.eclipse.tools.maf.dt.v201: Associated MAF runtime is not installed.
+
+!ENTRY oracle.eclipse.tools.maf.dt.v21 1 0 2016-09-05 15:13:29.816
+!MESSAGE Runtime bundle is not installed for MAF Runtime 2.1
+
+!ENTRY org.eclipse.jdt.launching 4 4 2016-09-05 15:13:29.820
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v21 contributed by oracle.eclipse.tools.maf.dt.v21: Associated MAF runtime is not installed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v21 contributed by oracle.eclipse.tools.maf.dt.v21: Associated MAF runtime is not installed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1393)
+	at org.eclipse.jdt.launching.JavaRuntime.addVMExtensions(JavaRuntime.java:1580)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2719)
+	at org.eclipse.jdt.launching.JavaRuntime.getVMInstallTypes(JavaRuntime.java:539)
+	at org.eclipse.jdt.internal.launching.environments.EnvironmentsManager.initializeCompatibilities(EnvironmentsManager.java:241)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironment.init(ExecutionEnvironment.java:181)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironment.getDefaultVM(ExecutionEnvironment.java:223)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.resolveVM(JREContainerInitializer.java:175)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.resolveVM(JREContainerInitializer.java:142)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.initialize(JREContainerInitializer.java:59)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2868)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:2774)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2812)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1895)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3298)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2693)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2857)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1962)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.getRootInfos(DeltaProcessingState.java:311)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.initializeRoots(DeltaProcessingState.java:256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.processResourceDelta(DeltaProcessor.java:1858)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2059)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2016-09-05 15:13:29.820
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v21 contributed by oracle.eclipse.tools.maf.dt.v21: Associated MAF runtime is not installed.
+
+!ENTRY oracle.eclipse.tools.maf.dt.v211 1 0 2016-09-05 15:13:29.826
+!MESSAGE Runtime bundle is not installed for MAF Runtime 2.1.1
+
+!ENTRY org.eclipse.jdt.launching 4 4 2016-09-05 15:13:29.830
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v211 contributed by oracle.eclipse.tools.maf.dt.v211: Associated MAF runtime is not installed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v211 contributed by oracle.eclipse.tools.maf.dt.v211: Associated MAF runtime is not installed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1393)
+	at org.eclipse.jdt.launching.JavaRuntime.addVMExtensions(JavaRuntime.java:1580)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2719)
+	at org.eclipse.jdt.launching.JavaRuntime.getVMInstallTypes(JavaRuntime.java:539)
+	at org.eclipse.jdt.internal.launching.environments.EnvironmentsManager.initializeCompatibilities(EnvironmentsManager.java:241)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironment.init(ExecutionEnvironment.java:181)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironment.getDefaultVM(ExecutionEnvironment.java:223)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.resolveVM(JREContainerInitializer.java:175)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.resolveVM(JREContainerInitializer.java:142)
+	at org.eclipse.jdt.internal.launching.JREContainerInitializer.initialize(JREContainerInitializer.java:59)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2868)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:2774)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2812)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1895)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3298)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2693)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:2857)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:1962)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.getRootInfos(DeltaProcessingState.java:311)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.initializeRoots(DeltaProcessingState.java:256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.processResourceDelta(DeltaProcessor.java:1858)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2059)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:373)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2250)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2016-09-05 15:13:29.830
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v211 contributed by oracle.eclipse.tools.maf.dt.v211: Associated MAF runtime is not installed.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:15:43.257
+!MESSAGE Started WebLogic Server Monitor [mydomain@localhost:7001, Version:12.1.3.0.0]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:04.481
+!MESSAGE Server watcher[Oracle WebLogic Server 12c (12.1.3) at localhost [mydomain]]:running Weblogic detected, validating...
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:08.808
+!MESSAGE JMX Connection created to WebLogic Server @:[service:jmx:t3://localhost:7001/jndi/weblogic.management.mbeanservers.domainruntime]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:10.663
+!MESSAGE Creating Deployment manager...
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:10.667
+!MESSAGE Elapsed time 1578ms
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:10.670
+!MESSAGE Deployment manager created :[Oracle WebLogic Server 12c (12.1.3) at localhost [mydomain] t3://localhost:7001]@429513017
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:11.548
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:11.560
+!MESSAGE Found new module:[JavaScriptClass]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:11.577
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:11.894
+!MESSAGE Module Status: 
+-JavaScriptClass (add) (deploy)
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:12.038
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:12.531
+!MESSAGE Waiting on ProgressObject:@609926507
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:12.833
+!MESSAGE ProgressObject completed :@609926507
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:12.839
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:13.019
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:13.337
+!MESSAGE Waiting on ProgressObject:@764338959
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:13.605
+!MESSAGE ProgressObject completed :@764338959
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:13.613
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:13.617
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:13.850
+!MESSAGE Waiting on ProgressObject:@818563925
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:14.007
+!MESSAGE ProgressObject completed :@818563925
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:14.014
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:14.018
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-05 15:16:14.023
+!MESSAGE Publishing finished.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-09-05 17:08:03.234
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [C:\Program Files\Java\jre1.8.0_51\lib\rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.Openable.openAncestors(Openable.java:505)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:241)
+	at org.eclipse.jdt.internal.core.Openable.openAncestors(Openable.java:505)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:241)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.Openable.getBuffer(Openable.java:285)
+	at org.eclipse.jdt.internal.core.ClassFile.getBuffer(ClassFile.java:439)
+	at org.eclipse.jdt.internal.core.ClassFile.getSourceRange(ClassFile.java:598)
+	at org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor.verifyInput(ClassFileEditor.java:812)
+	at org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor.access$2(ClassFileEditor.java:798)
+	at org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor$SourceAttachmentForm$2.widgetSelected(ClassFileEditor.java:293)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2016-09-05 17:08:03.235
+!MESSAGE C:\Program Files\Java\jre1.8.0_51\lib\rt.jar is not on its project's build path
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:56:18.059
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:56:18.380
+!MESSAGE Total deleted modules: 1
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:56:18.384
+!MESSAGE Found deleted module [JavaScriptClass]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:56:18.399
+!MESSAGE Module changed:[JavaScriptClass]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:56:18.403
+!MESSAGE Module Status: 
+-JavaScriptClass (delete) (undeploy)
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:56:18.531
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:56:24.699
+!MESSAGE Waiting on ProgressObject:@252312628
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:56:24.933
+!MESSAGE ProgressObject completed :@252312628
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:56:24.952
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:56:25.075
+!MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:57:17.251
+!MESSAGE Releasing deployment manager :[Oracle WebLogic Server 12c (12.1.3) at localhost [mydomain]]@429513017
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-06 20:57:25.188
+!MESSAGE Stopped WebLogic Server Monitor [mydomain@localhost:7001, Version:12.1.3.0.0]
+!SESSION 2016-09-07 10:03:54.206 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Steve_Revature\my_git_repos\1608_Aug15_Java_Steven\Week_4_JavaScript
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-09-07 10:04:22.592
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Steve_Revature'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY oracle.eclipse.tools.maf.dt.v20 1 0 2016-09-07 10:04:23.158
+!MESSAGE Runtime bundle is not installed for MAF Runtime 2.0. Go to Help->Install New Software and install this version in order to use it. Migration to a newer version is also possible from project's context menu (Configure > Migrate MAF Application...)
+
+!ENTRY org.eclipse.jdt.launching 4 4 2016-09-07 10:04:23.223
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDC contributed by oracle.eclipse.tools.adf.mobile: Associated MAF runtime is not installed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDC contributed by oracle.eclipse.tools.adf.mobile: Associated MAF runtime is not installed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1393)
+	at org.eclipse.jdt.launching.JavaRuntime.addVMExtensions(JavaRuntime.java:1580)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2719)
+	at org.eclipse.jdt.launching.JavaRuntime.getVMInstallTypes(JavaRuntime.java:539)
+	at org.eclipse.jst.common.project.facet.core.internal.JavaRuntimeBridge.getExportedRuntimeNames(JavaRuntimeBridge.java:41)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.bridge(RuntimeManagerImpl.java:402)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.getRuntimes(RuntimeManagerImpl.java:154)
+	at org.eclipse.wst.common.project.facet.core.runtime.RuntimeManager.getRuntimes(RuntimeManager.java:81)
+	at org.eclipse.wst.server.core.internal.facets.FacetUtil.getRuntime(FacetUtil.java:95)
+	at org.eclipse.jst.server.core.FacetUtil.getRuntime(FacetUtil.java:59)
+	at oracle.eclipse.tools.common.wtp.core.RuntimeBridgeUtil.bridge(RuntimeBridgeUtil.java:22)
+	at oracle.eclipse.tools.weblogic.internal.WlsRuntimeLifecycleListener.handleEvent(WlsRuntimeLifecycleListener.java:62)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeSpy$2.run(WlsRuntimeSpy.java:180)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2016-09-07 10:04:23.225
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDC contributed by oracle.eclipse.tools.adf.mobile: Associated MAF runtime is not installed.
+
+!ENTRY oracle.eclipse.tools.maf.dt.v20 1 0 2016-09-07 10:04:23.251
+!MESSAGE Runtime bundle is not installed for MAF Runtime 2.0. Go to Help->Install New Software and install this version in order to use it. Migration to a newer version is also possible from project's context menu (Configure > Migrate MAF Application...)
+
+!ENTRY org.eclipse.jdt.launching 4 4 2016-09-07 10:04:23.282
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv20 contributed by oracle.eclipse.tools.maf.dt.v20: Associated MAF runtime is not installed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv20 contributed by oracle.eclipse.tools.maf.dt.v20: Associated MAF runtime is not installed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1393)
+	at org.eclipse.jdt.launching.JavaRuntime.addVMExtensions(JavaRuntime.java:1580)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2719)
+	at org.eclipse.jdt.launching.JavaRuntime.getVMInstallTypes(JavaRuntime.java:539)
+	at org.eclipse.jst.common.project.facet.core.internal.JavaRuntimeBridge.getExportedRuntimeNames(JavaRuntimeBridge.java:41)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.bridge(RuntimeManagerImpl.java:402)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.getRuntimes(RuntimeManagerImpl.java:154)
+	at org.eclipse.wst.common.project.facet.core.runtime.RuntimeManager.getRuntimes(RuntimeManager.java:81)
+	at org.eclipse.wst.server.core.internal.facets.FacetUtil.getRuntime(FacetUtil.java:95)
+	at org.eclipse.jst.server.core.FacetUtil.getRuntime(FacetUtil.java:59)
+	at oracle.eclipse.tools.common.wtp.core.RuntimeBridgeUtil.bridge(RuntimeBridgeUtil.java:22)
+	at oracle.eclipse.tools.weblogic.internal.WlsRuntimeLifecycleListener.handleEvent(WlsRuntimeLifecycleListener.java:62)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeSpy$2.run(WlsRuntimeSpy.java:180)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2016-09-07 10:04:23.283
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv20 contributed by oracle.eclipse.tools.maf.dt.v20: Associated MAF runtime is not installed.
+
+!ENTRY oracle.eclipse.tools.maf.dt.v201 1 0 2016-09-07 10:04:23.303
+!MESSAGE Runtime bundle is not installed for MAF Runtime 2.0.1. Go to Help->Install New Software and install this version in order to use it. Migration to a newer version is also possible from project's context menu (Configure > Migrate MAF Application...)
+
+!ENTRY org.eclipse.jdt.launching 4 4 2016-09-07 10:04:23.319
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv201 contributed by oracle.eclipse.tools.maf.dt.v201: Associated MAF runtime is not installed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv201 contributed by oracle.eclipse.tools.maf.dt.v201: Associated MAF runtime is not installed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1393)
+	at org.eclipse.jdt.launching.JavaRuntime.addVMExtensions(JavaRuntime.java:1580)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2719)
+	at org.eclipse.jdt.launching.JavaRuntime.getVMInstallTypes(JavaRuntime.java:539)
+	at org.eclipse.jst.common.project.facet.core.internal.JavaRuntimeBridge.getExportedRuntimeNames(JavaRuntimeBridge.java:41)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.bridge(RuntimeManagerImpl.java:402)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.getRuntimes(RuntimeManagerImpl.java:154)
+	at org.eclipse.wst.common.project.facet.core.runtime.RuntimeManager.getRuntimes(RuntimeManager.java:81)
+	at org.eclipse.wst.server.core.internal.facets.FacetUtil.getRuntime(FacetUtil.java:95)
+	at org.eclipse.jst.server.core.FacetUtil.getRuntime(FacetUtil.java:59)
+	at oracle.eclipse.tools.common.wtp.core.RuntimeBridgeUtil.bridge(RuntimeBridgeUtil.java:22)
+	at oracle.eclipse.tools.weblogic.internal.WlsRuntimeLifecycleListener.handleEvent(WlsRuntimeLifecycleListener.java:62)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeSpy$2.run(WlsRuntimeSpy.java:180)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2016-09-07 10:04:23.320
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMCDCv201 contributed by oracle.eclipse.tools.maf.dt.v201: Associated MAF runtime is not installed.
+
+!ENTRY oracle.eclipse.tools.maf.dt.v21 1 0 2016-09-07 10:04:23.331
+!MESSAGE Runtime bundle is not installed for MAF Runtime 2.1
+
+!ENTRY org.eclipse.jdt.launching 4 4 2016-09-07 10:04:23.502
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v21 contributed by oracle.eclipse.tools.maf.dt.v21: Associated MAF runtime is not installed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v21 contributed by oracle.eclipse.tools.maf.dt.v21: Associated MAF runtime is not installed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1393)
+	at org.eclipse.jdt.launching.JavaRuntime.addVMExtensions(JavaRuntime.java:1580)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2719)
+	at org.eclipse.jdt.launching.JavaRuntime.getVMInstallTypes(JavaRuntime.java:539)
+	at org.eclipse.jst.common.project.facet.core.internal.JavaRuntimeBridge.getExportedRuntimeNames(JavaRuntimeBridge.java:41)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.bridge(RuntimeManagerImpl.java:402)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.getRuntimes(RuntimeManagerImpl.java:154)
+	at org.eclipse.wst.common.project.facet.core.runtime.RuntimeManager.getRuntimes(RuntimeManager.java:81)
+	at org.eclipse.wst.server.core.internal.facets.FacetUtil.getRuntime(FacetUtil.java:95)
+	at org.eclipse.jst.server.core.FacetUtil.getRuntime(FacetUtil.java:59)
+	at oracle.eclipse.tools.common.wtp.core.RuntimeBridgeUtil.bridge(RuntimeBridgeUtil.java:22)
+	at oracle.eclipse.tools.weblogic.internal.WlsRuntimeLifecycleListener.handleEvent(WlsRuntimeLifecycleListener.java:62)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeSpy$2.run(WlsRuntimeSpy.java:180)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2016-09-07 10:04:23.503
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v21 contributed by oracle.eclipse.tools.maf.dt.v21: Associated MAF runtime is not installed.
+
+!ENTRY oracle.eclipse.tools.maf.dt.v211 1 0 2016-09-07 10:04:23.586
+!MESSAGE Runtime bundle is not installed for MAF Runtime 2.1.1
+
+!ENTRY org.eclipse.jdt.launching 4 4 2016-09-07 10:04:23.633
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v211 contributed by oracle.eclipse.tools.maf.dt.v211: Associated MAF runtime is not installed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v211 contributed by oracle.eclipse.tools.maf.dt.v211: Associated MAF runtime is not installed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1408)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1393)
+	at org.eclipse.jdt.launching.JavaRuntime.addVMExtensions(JavaRuntime.java:1580)
+	at org.eclipse.jdt.launching.JavaRuntime.initializeVMs(JavaRuntime.java:2719)
+	at org.eclipse.jdt.launching.JavaRuntime.getVMInstallTypes(JavaRuntime.java:539)
+	at org.eclipse.jst.common.project.facet.core.internal.JavaRuntimeBridge.getExportedRuntimeNames(JavaRuntimeBridge.java:41)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.bridge(RuntimeManagerImpl.java:402)
+	at org.eclipse.wst.common.project.facet.core.runtime.internal.RuntimeManagerImpl.getRuntimes(RuntimeManagerImpl.java:154)
+	at org.eclipse.wst.common.project.facet.core.runtime.RuntimeManager.getRuntimes(RuntimeManager.java:81)
+	at org.eclipse.wst.server.core.internal.facets.FacetUtil.getRuntime(FacetUtil.java:95)
+	at org.eclipse.jst.server.core.FacetUtil.getRuntime(FacetUtil.java:59)
+	at oracle.eclipse.tools.common.wtp.core.RuntimeBridgeUtil.bridge(RuntimeBridgeUtil.java:22)
+	at oracle.eclipse.tools.weblogic.internal.WlsRuntimeLifecycleListener.handleEvent(WlsRuntimeLifecycleListener.java:62)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeSpy$2.run(WlsRuntimeSpy.java:180)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2016-09-07 10:04:23.633
+!MESSAGE Illegal install location C:\REV\eclipse\oepe-12.1.3.7-mars-distro-win32-x86_64 for vmInstall oracle.eclipse.tools.maf.JVMSE8CP2v211 contributed by oracle.eclipse.tools.maf.dt.v211: Associated MAF runtime is not installed.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:04:28.293
+!MESSAGE Started WebLogic Server Monitor [mydomain@localhost:7001, Version:12.1.3.0.0]
+
+!ENTRY org.eclipse.ui 4 0 2016-09-07 10:15:34.235
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.RuntimeException: ICreateWLSTFileOp.TemplateName: PossibleValuesValidationService.compute() has failed
+	at org.eclipse.sapphire.services.DataService.refresh(DataService.java:130)
+	at org.eclipse.sapphire.services.DataService.data(DataService.java:75)
+	at org.eclipse.sapphire.services.ValidationService.validation(ValidationService.java:49)
+	at org.eclipse.sapphire.Property.refreshValidation(Property.java:254)
+	at org.eclipse.sapphire.Property.validation(Property.java:476)
+	at org.eclipse.sapphire.ui.forms.PropertyEditorPart.computeValidation(PropertyEditorPart.java:565)
+	at org.eclipse.sapphire.ui.SapphirePart.refreshValidation(SapphirePart.java:453)
+	at org.eclipse.sapphire.ui.SapphirePart.validation(SapphirePart.java:424)
+	at org.eclipse.sapphire.ui.forms.ContainerPart.computeValidation(ContainerPart.java:105)
+	at org.eclipse.sapphire.ui.SapphirePart.refreshValidation(SapphirePart.java:453)
+	at org.eclipse.sapphire.ui.SapphirePart.validation(SapphirePart.java:424)
+	at org.eclipse.sapphire.ui.forms.ContainerPart.computeValidation(ContainerPart.java:105)
+	at org.eclipse.sapphire.ui.SapphirePart.refreshValidation(SapphirePart.java:453)
+	at org.eclipse.sapphire.ui.SapphirePart.validation(SapphirePart.java:424)
+	at org.eclipse.sapphire.ui.forms.swt.SapphireWizardPage.refreshValidation(SapphireWizardPage.java:188)
+	at org.eclipse.sapphire.ui.forms.swt.SapphireWizardPage.<init>(SapphireWizardPage.java:86)
+	at org.eclipse.sapphire.ui.forms.swt.SapphireWizard.getPages(SapphireWizard.java:209)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:707)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:597)
+	at org.eclipse.jface.window.Window.create(Window.java:430)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1096)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(WizardShortcutAction.java:96)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+Caused by: java.lang.RuntimeException: ICreateWLSTFileOp.TemplateName: TemplateNamesValueProvider.compute() has failed
+	at org.eclipse.sapphire.services.DataService.refresh(DataService.java:130)
+	at org.eclipse.sapphire.services.DataService.data(DataService.java:75)
+	at org.eclipse.sapphire.PossibleValuesService.values(PossibleValuesService.java:77)
+	at org.eclipse.sapphire.services.internal.PossibleValuesValidationService.compute(PossibleValuesValidationService.java:57)
+	at org.eclipse.sapphire.services.internal.PossibleValuesValidationService.compute(PossibleValuesValidationService.java:1)
+	at org.eclipse.sapphire.services.DataService.refresh(DataService.java:103)
+	... 51 more
+Caused by: java.lang.NullPointerException
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectFrameworkImpl.create(FacetedProjectFrameworkImpl.java:670)
+	at org.eclipse.wst.common.project.facet.core.ProjectFacetsManager.create(ProjectFacetsManager.java:346)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeUtil.getWlsRuntimeComponent(WlsRuntimeUtil.java:53)
+	at oracle.eclipse.tools.weblogic.WlsRuntimeUtil.getWlsRuntimePath(WlsRuntimeUtil.java:120)
+	at oracle.eclipse.tools.weblogic.scripting.internal.operation.TemplateNamesValueProvider.compute(TemplateNamesValueProvider.java:25)
+	at org.eclipse.sapphire.PossibleValuesService.compute(PossibleValuesService.java:93)
+	at org.eclipse.sapphire.PossibleValuesService.compute(PossibleValuesService.java:1)
+	at org.eclipse.sapphire.services.DataService.refresh(DataService.java:103)
+	... 56 more
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:17.341
+!MESSAGE Server watcher[Oracle WebLogic Server 12c (12.1.3) at localhost [mydomain]]:running Weblogic detected, validating...
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:20.168
+!MESSAGE JMX Connection created to WebLogic Server @:[service:jmx:t3://localhost:7001/jndi/weblogic.management.mbeanservers.domainruntime]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:21.939
+!MESSAGE Creating Deployment manager...
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:21.943
+!MESSAGE Elapsed time 1557ms
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:21.947
+!MESSAGE Deployment manager created :[Oracle WebLogic Server 12c (12.1.3) at localhost [mydomain] t3://localhost:7001]@1756960045
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:22.883
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:22.894
+!MESSAGE Found new module:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:22.903
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:23.028
+!MESSAGE Module Status: 
+-JavaScriptClassExamples (add) (deploy)
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:23.194
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:23.947
+!MESSAGE Waiting on ProgressObject:@1142826971
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:24.260
+!MESSAGE ProgressObject completed :@1142826971
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:24.275
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:24.496
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:24.976
+!MESSAGE Waiting on ProgressObject:@1207708916
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:25.438
+!MESSAGE ProgressObject completed :@1207708916
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:25.450
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:25.455
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:25.682
+!MESSAGE Waiting on ProgressObject:@1632375193
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:25.837
+!MESSAGE ProgressObject completed :@1632375193
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:25.849
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:25.860
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:21:25.872
+!MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:32.207
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:32.215
+!MESSAGE Module not changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:32.228
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:32.282
+!MESSAGE Module Status: 
+-JavaScriptClassExamples
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:32.348
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:32.619
+!MESSAGE Waiting on ProgressObject:@252180083
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:32.739
+!MESSAGE ProgressObject completed :@252180083
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:32.745
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:32.930
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:33.239
+!MESSAGE Waiting on ProgressObject:@1147155626
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:33.370
+!MESSAGE ProgressObject completed :@1147155626
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:33.379
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:33.384
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:33.718
+!MESSAGE Waiting on ProgressObject:@809028833
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:33.857
+!MESSAGE ProgressObject completed :@809028833
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:33.863
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:33.867
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:23:33.871
+!MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:04.468
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:04.476
+!MESSAGE Module not changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:04.494
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:04.537
+!MESSAGE Module Status: 
+-JavaScriptClassExamples
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:04.583
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:04.848
+!MESSAGE Waiting on ProgressObject:@2124936565
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:04.968
+!MESSAGE ProgressObject completed :@2124936565
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:04.975
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:05.095
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:05.423
+!MESSAGE Waiting on ProgressObject:@68770180
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:05.552
+!MESSAGE ProgressObject completed :@68770180
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:05.559
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:05.563
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:05.746
+!MESSAGE Waiting on ProgressObject:@911416250
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:05.884
+!MESSAGE ProgressObject completed :@911416250
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:05.892
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:05.898
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:24:05.902
+!MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:28.603
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:28.614
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:28.624
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:28.667
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:28.671
+!MESSAGE Module Status: 
+-JavaScriptClassExamples (change) (redeploy)
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:28.702
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:29.033
+!MESSAGE Waiting on ProgressObject:@78596214
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:29.164
+!MESSAGE ProgressObject completed :@78596214
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:29.172
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:29.319
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:29.543
+!MESSAGE Waiting on ProgressObject:@1935357720
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:29.685
+!MESSAGE ProgressObject completed :@1935357720
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:29.693
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:29.698
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:29.879
+!MESSAGE Waiting on ProgressObject:@983036647
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:30.025
+!MESSAGE ProgressObject completed :@983036647
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:30.032
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:30.037
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:34:30.043
+!MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:04.639
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:04.654
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:04.667
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:04.701
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:04.707
+!MESSAGE Module Status: 
+-JavaScriptClassExamples (change) (redeploy)
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:04.754
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:05.085
+!MESSAGE Waiting on ProgressObject:@1803123665
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:05.199
+!MESSAGE ProgressObject completed :@1803123665
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:05.204
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:05.302
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:05.565
+!MESSAGE Waiting on ProgressObject:@1059521097
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:05.685
+!MESSAGE ProgressObject completed :@1059521097
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:05.692
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:05.696
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:05.876
+!MESSAGE Waiting on ProgressObject:@1744727012
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:06.018
+!MESSAGE ProgressObject completed :@1744727012
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:06.029
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:06.036
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:44:06.042
+!MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:12.751
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:12.798
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:12.805
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:12.853
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:12.862
+!MESSAGE Module Status: 
+-JavaScriptClassExamples (change) (redeploy)
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:12.895
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:13.193
+!MESSAGE Waiting on ProgressObject:@520467909
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:13.314
+!MESSAGE ProgressObject completed :@520467909
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:13.319
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:13.420
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:13.621
+!MESSAGE Waiting on ProgressObject:@1857476427
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:13.734
+!MESSAGE ProgressObject completed :@1857476427
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:13.739
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:13.743
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:13.970
+!MESSAGE Waiting on ProgressObject:@1222394816
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:14.093
+!MESSAGE ProgressObject completed :@1222394816
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:14.099
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:14.104
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 10:47:14.108
+!MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:00.125
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:00.150
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:00.165
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:00.203
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:00.214
+!MESSAGE Module Status: 
+-JavaScriptClassExamples (change) (redeploy)
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:00.250
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:00.670
+!MESSAGE Waiting on ProgressObject:@1076863687
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:00.791
+!MESSAGE ProgressObject completed :@1076863687
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:00.797
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:00.886
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:01.111
+!MESSAGE Waiting on ProgressObject:@365486549
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:01.230
+!MESSAGE ProgressObject completed :@365486549
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:01.236
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:01.240
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:01.420
+!MESSAGE Waiting on ProgressObject:@1303585893
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:01.561
+!MESSAGE ProgressObject completed :@1303585893
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:01.567
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:01.572
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:01.576
+!MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:25.953
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:25.958
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:25.963
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:26.007
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:26.011
+!MESSAGE Module Status: 
+-JavaScriptClassExamples (change) (redeploy)
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:26.035
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:26.233
+!MESSAGE Waiting on ProgressObject:@577338046
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:26.353
+!MESSAGE ProgressObject completed :@577338046
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:26.358
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:26.440
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:26.691
+!MESSAGE Waiting on ProgressObject:@1131497899
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:26.809
+!MESSAGE ProgressObject completed :@1131497899
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:26.814
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:26.818
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:27.047
+!MESSAGE Waiting on ProgressObject:@1691300976
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:27.176
+!MESSAGE ProgressObject completed :@1691300976
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:27.187
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:27.193
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:07:27.197
+!MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:29.265
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:29.272
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:29.287
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:29.330
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:29.334
+!MESSAGE Module Status: 
+-JavaScriptClassExamples (change) (redeploy)
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:29.357
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:29.579
+!MESSAGE Waiting on ProgressObject:@1260519919
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:29.697
+!MESSAGE ProgressObject completed :@1260519919
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:29.702
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:29.787
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:29.997
+!MESSAGE Waiting on ProgressObject:@9521957
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:30.122
+!MESSAGE ProgressObject completed :@9521957
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:30.130
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:30.139
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:30.389
+!MESSAGE Waiting on ProgressObject:@340783400
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:30.523
+!MESSAGE ProgressObject completed :@340783400
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:30.527
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:30.531
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:10:30.536
+!MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:29.473
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:29.481
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:29.491
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:29.532
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:29.538
+!MESSAGE Module Status: 
+-JavaScriptClassExamples (change) (redeploy)
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:29.565
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:29.788
+!MESSAGE Waiting on ProgressObject:@50768240
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:29.915
+!MESSAGE ProgressObject completed :@50768240
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:29.922
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:30.006
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:30.218
+!MESSAGE Waiting on ProgressObject:@405152834
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:30.341
+!MESSAGE ProgressObject completed :@405152834
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:30.351
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:30.357
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:30.569
+!MESSAGE Waiting on ProgressObject:@231345940
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:30.685
+!MESSAGE ProgressObject completed :@231345940
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:30.689
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:30.693
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:12:30.699
+!MESSAGE Publishing finished.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:30.406
+!MESSAGE Publishing beginning.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:30.424
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:30.436
+!MESSAGE Total deleted modules: 0
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:30.475
+!MESSAGE Module changed:[JavaScriptClassExamples]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:30.479
+!MESSAGE Module Status: 
+-JavaScriptClassExamples (change) (redeploy)
+
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:30.506
+!MESSAGE Status INFO: oracle.eclipse.tools.weblogic code=2000 ***dm.undeploy (undeploy) _auto_generated_ear_ null from targets [{Target=myserver, WebLogicTargetType=server, Name=_auto_generated_ear_}]
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:30.818
+!MESSAGE Waiting on ProgressObject:@596957607
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:30.929
+!MESSAGE ProgressObject completed :@596957607
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:30.934
+!MESSAGE Module _auto_generated_ear_ was undeployed sucessfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:31.002
+!MESSAGE ***dm.distribute (deploy) module _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:31.211
+!MESSAGE Waiting on ProgressObject:@1143071826
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:31.446
+!MESSAGE ProgressObject completed :@1143071826
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:31.452
+!MESSAGE _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:31.456
+!MESSAGE ***dm.start (startModule) _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:31.677
+!MESSAGE Waiting on ProgressObject:@358544734
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:31.799
+!MESSAGE ProgressObject completed :@358544734
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:31.807
+!MESSAGE Started _auto_generated_ear_
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:31.812
+!MESSAGE Module _auto_generated_ear_ deployed successfully.
+
+!ENTRY oracle.eclipse.tools.weblogic 1 2000 2016-09-07 11:21:31.818
+!MESSAGE Publishing finished.
