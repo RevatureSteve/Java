@@ -1,0 +1,32 @@
+/**
+ * Form Javascript for adding students
+ */
+
+function add(){
+	var id = document.getElementById("t_id");
+	var name = document.getElementById("t_name")
+	var major = document.getElementById("t_major");
+	
+	//Create Row Element
+	var row = document.createElement("tr");
+	
+	//Create Row Cells
+	var cell1 = document.createElement("td");
+	var cell2 = document.createElement("td");
+	var cell3 = document.createElement("td");
+	
+	//Append the cells to the row
+	row.appendChild(cell1);
+	row.appendChild(cell2);
+	row.appendChild(cell3);
+	
+	//add text
+	cell1.innerHTML = id;
+	cell2.innerHTML = name;
+	cell3.innerHTML = major;
+	
+	//append to the table
+	document.getElementById("students")
+		
+	
+}

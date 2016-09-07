@@ -26,7 +26,7 @@ function changeString(myVar){
 
 
 
-//--------------------Type cocercion
+//--------------------Type coercion
 //5 == 5
 //5 === 5
 
@@ -85,6 +85,38 @@ function guardOperator(myVar){
 function defaultOperator(myVar){
 	return myVar || "2nd"; //first statement truthy? return the FIRST statement
 }
+
+//-----------------Objects
+var book = {
+		title: "Harry Potter",
+		year: 2001,
+		author: {
+			name: "JK",
+			dob: 1965
+		}
+		
+};
+
+//-------------No Function Overloading
+function sumNum(x,y,z){
+	console.log(x+y+z);
+}
+
+function sumNum(x,y){
+	console.log(x+y + " in x,y");
+}
+
+//--------Implicit arguments object
+function sumNum(){
+	console.log("nothing");
+	console.log(arguments[0]+ arguments[1] + arguments[2]);
+}
+
+
+
+
+
+
 
 
 

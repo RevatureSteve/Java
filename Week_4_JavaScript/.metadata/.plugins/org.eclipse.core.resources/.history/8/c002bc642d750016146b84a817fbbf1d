@@ -1,0 +1,10 @@
+/**
+ * Form Javascript for adding students
+ */
+
+function add(){
+	var id
+	var name
+	var major
+	
+}
