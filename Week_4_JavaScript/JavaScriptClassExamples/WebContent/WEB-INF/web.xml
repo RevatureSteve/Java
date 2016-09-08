@@ -9,4 +9,16 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>AddStudent</servlet-name>
+  	<servlet-class>com.revature.servlets.AddStudentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AddStudent</servlet-name>
+  	<url-pattern>/addStudents.do</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>
