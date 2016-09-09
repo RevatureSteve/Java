@@ -2,3 +2,58 @@
  *Street Fighter CSS
  */
  
+ body{
+ 	background-color: orangered; 
+ }
+ 
+ /* 
+ 	rem -Root Element,
+ 	 Equal to computed value of the font-size on the root
+ 	element. When specified, the rem unit refer to the property's 
+ 	initial value.
+ 	ie
+ 		10px = 0.625rem
+ 		12px = 0.75rem
+ 		14px = 0.875rem
+ 		16px = 1rem
+*/
+ .main{
+ 	background-color: whitesmoke;
+ 	margin-top: 7rem;
+ 	padding-left: 6rem;
+ 	min-width: 75rem;
+ 	height: 31rem;
+ 	
+ }
+ 
+ .ryu-cool,
+ .ryu-ready,
+ .ryu-standing,
+ .ryu-throwing{
+ 	width: 41rem;
+ 	height: 31rem;
+ }
+ 
+ .ryu-cool,
+ .ryu-ready,
+ .ryu-throwing{
+ 	display: none;
+ }
+ 
+ .ryu-cool{
+ 	background-image: url('../images/ryu-cool.gif');
+ }
+ 
+ .ryu-ready{
+ 	background-image: url('../images/ryu-ready-position.gif');
+ }
+ 
+ .ryu-standing{
+ 	background-image: url('../images/ryu-standing-still.png');
+ }
+ 
+ .ryu-throwing{
+ 	background-image: url('../images/ryu-throwing-hadouken.png');
+ }
+ 
+ 
