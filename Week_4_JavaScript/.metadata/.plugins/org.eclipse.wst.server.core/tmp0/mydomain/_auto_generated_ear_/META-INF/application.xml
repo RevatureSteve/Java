@@ -8,8 +8,8 @@
 </module>
 <module>
    <web>
-       <web-uri>JavaScriptClassExamples.war</web-uri>
-       <context-root>JavaScriptClassExamples</context-root>
+       <web-uri>MasterWebProject.war</web-uri>
+       <context-root>MasterWebProject</context-root>
    </web>
 </module>
 

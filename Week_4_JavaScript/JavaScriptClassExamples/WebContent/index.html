@@ -3,10 +3,41 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>JavaScript Examples</title>
+<style>
+#outer{
+	background: #ff292a;
+	margin: 10px;
+}
+
+#inner{
+	background: #43ff3e;
+	margin: 10px;
+}
+
+#innerMost{
+	background: #5172ff;
+	margin: 10px;
+}
+</style>
 </head>
 <body>
+	<h1>Welcome JavaScript</h1>
+	<br>
+	<br>
 
-<h1>Welcome JavaScript</h1>
-<script type="text/javascript" src="resources/js/JavaScriptClass.js"></script>
+
+	<div id="outer">
+		Outer div
+		
+		<div id="inner">
+			Inner div
+
+			<div id="innerMost">
+			<pre>InnerMost div</pre>
+			
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="resources/js/JavaScriptClass.js"></script>
 </body>
 </html>

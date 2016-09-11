@@ -1,73 +1,79 @@
-/**
- *  Street Fighter js
- */
+// track if mouse over ryu
+var isHovered = false;
 
-
-
-//Load Javascript
-$(document).ready(function(){
-	console.log("Document is ready");
-	//show ryu-ready on mouseenter
-	$('.ryu').mouseenter(function(){
-		$('.ryu-standing').hide();
+// on document ready
+$(document).ready(function() {
+	$('.ryu').mouseenter(function() {
+		$('.ryu-still').hide();
 		$('.ryu-ready').show();
-		
-		//Hide ryu-ready on mouseleave
-	}).mouseleave(function(){				//Chaining functions
-		$('.ryu-standing').show();
+		isHovered = true;
+		// alert('mouse enter ryu div');
+	})
+	.mouseleave(function() {
+		$('.ryu-still').show();
 		$('.ryu-ready').hide();
-	}).mousedown(function(){
+		isHovered = false;
+	})
+	.mousedown(function() {
 		playHoudoken();
-		$('.ryu-standing').hide();
-		$('.ryu-ready').hide();
 		$('.ryu-throwing').show();
-	}).mouseup(function(){
+		$('.ryu-ready').hide();
+		// $('.ryu-still').hide();
+		$('.hadouken').finish().show().animate(
+			{'left': '8.75rem'},  //Starting location
+			 280,									//time ms of animation
+			function() {
+				$(this).hide();			//hide its original location
+				$(this).css('left', '-10rem'); //ending location
+			});
+	})
+	.mouseup(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
-	})
-})
+		// $('.ryu-still').hide();
+		// $('.hadouken').hide();
+	});
+});
 
-	
-	
-	
-	
-	//Play hadouken-sound on mousedown
-function playHoudoken(){
-	$('#hadouken-sound')[0].volume = 0.2;
-	$('#hadouken-sound')[0].play();
-	
-}
-
-	//show throwing, hide ready
-	//Animate hadouken gif 
-	
-	//mouseup - hide throwing, show ready 
-	
-//---
 //document ready keydown 'x'
 //playPose, show cool, hide still, hide ready
-$(document).keydown(function(e){
-	
-	//x e keycode 
-	if(e.keyCode == 88){
-		playPose();
-		$('.ryu-cool').show();
-		$('.ryu-still').hide();
-		$('.ryu-ready').hide();
-	}
-}).keyup(function(e){
-	if(e.keyCode == 88){
-		$('#survivor-sound')[0].pause();
-		$('#survivor-sound').load(); //reload the audio file to reset sound
-		$('.ryu-cool').hide();
-	}
-})
 
-//Play hadouken fn - volume, load, play
-//Play prose fn 
-function playPose(){			//keyup 'x' pose-sound pause/load, hide cool
-								//if hover show ready else show still
-								//---
-	$('#survivor-sound')[0].volume = 0.2;
-	$('#survivor-sound')[0].play();
+//keyup 'x' pose-sound pause/load, hide cool
+//if hover show ready else show still
+$(document).keydown(function(e) {
+		if (e.keyCode == 88) {
+			playPose();
+			$('.ryu-cool').show();
+			$('.ryu-still').hide();
+			$('.ryu-ready').hide();
+		}
+	}).keyup(function(e) {
+		if (e.keyCode == 88) {
+			$('#pose-sound')[0].pause();
+			$('#pose-sound')[0].load();
+			$('.ryu-cool').hide();
+			// $('.ryu-still').show();
+			if (isHovered == true) {
+				$('.ryu-ready').show();
+			}
+			else {
+				$('.ryu-still').show();
+			}
+		}
+	});
+
+<!-- Sound of Fireball -->
+function playHoudoken() {
+	$('#hadouken-sound')[0].volume = 0.2;
+	$('#hadouken-sound')[0].load(); //Reloads the audio file
+	$('#hadouken-sound')[0].play();
+}
+var playSound = false;
+function playPose() {
+	playSound = !playSound;
+	if (playSound) {
+		$('#pose-sound')[0].volume = 0.2;
+		// $('#pose-sound')[0].load();
+		$('#pose-sound')[0].play();
+	}
 }

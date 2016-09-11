@@ -9,22 +9,20 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
   <servlet>
-  	<servlet-name>getText</servlet-name>
-  	<servlet-class>com.revature.servlets.AJAXGetTextServlet</servlet-class>
+    <servlet-name>getText</servlet-name>
+    <servlet-class>com.revature.servlets.AJAXGetTextServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>getText</servlet-name>
-  	<url-pattern>/getText</url-pattern>
+    <servlet-name>getText</servlet-name>
+    <url-pattern>/getText</url-pattern>
   </servlet-mapping>
-  
   <servlet>
-  	<servlet-name>getJSON</servlet-name>
-  	<servlet-class>com.revature.servlets.AJAXGetJSONServlet</servlet-class>
+    <servlet-name>getJSON</servlet-name>
+    <servlet-class>com.revature.servlets.AJAXGetJSONServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>getJSON</servlet-name>
-  	<url-pattern>/getJSON</url-pattern>
+    <servlet-name>getJSON</servlet-name>
+    <url-pattern>/getJSON</url-pattern>
   </servlet-mapping>
 </web-app>

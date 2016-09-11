@@ -115,6 +115,90 @@ function sumNum(){
 
 
 
+var count = 0;
+
+//var birdCounter = 0;
+//var carCounter = 0;
+//
+
+//function countBird(){
+//	birdCounter++;
+//	return birdCounter + " birds";
+//}
+//
+//function countCar(){
+//	carCounter++;
+//	return carCounter + " Cars";
+//}
+
+//CLOSURE!!!!!!! 
+//JavaScript's Form of encapsulation
+function makeBirdCounter(){
+	var birdCounter = 0;
+	
+	function countBird(){
+		birdCounter++;
+		return birdCounter + " birds";
+	}
+	
+	return countBird;
+}
+
+function makeCarCounter(){
+	var carCounter = 0;
+	
+	return 	function (){
+		carCounter++;
+		return carCounter + " cars ";
+	}
+}
+
+function makeCounter(myTypeOfCounter){
+	var count = 0;
+	return function(){
+		count++;
+		return count +" " + myTypeOfCounter +"s";
+	}
+	
+}
+
+
+var idx = 0;
+function handler(event){
+	
+	console.log("%s--%s", idx++, this, event);
+	
+	event.stopPropagation();
+}
+
+window.onload = function(){
+	document.getElementById("outer").addEventListener("click", handler, false);
+	document.getElementById("inner").addEventListener("click", handler, false);
+	document.getElementById("innerMost").addEventListener("click", handler, false);
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
