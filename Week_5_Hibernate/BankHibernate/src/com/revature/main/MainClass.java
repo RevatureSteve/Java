@@ -9,9 +9,9 @@ public class MainClass {
 
 		BankDao dao = new BankDaoImpl();
 		
-		dao.retrieveAllBankUsers();
+//		dao.retrieveAllBankUsers();
 		
-//		System.out.println(dao.getBankAccountById(2));
+		System.out.println(dao.getBankUserById(2));
 
 	}
 

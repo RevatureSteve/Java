@@ -5,6 +5,8 @@ import java.sql.Timestamp;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -18,8 +20,9 @@ public class BankTx {
 	@Column(name="BA_ID")
 	private int baId;
 	
-	@Column(name="BTT_ID")
-	private int bttId;
+	@ManyToOne
+	@JoinColumn(name="BTT_ID")
+	private BankTxType bttId;
 	
 	@Column(name="TX_AMOUNT")
 	private double txAmount;
@@ -29,7 +32,7 @@ public class BankTx {
 	
 	public BankTx(){}
 
-	public BankTx(int btId, int baId, int bttId, double txAmount, Timestamp timestamp) {
+	public BankTx(int btId, int baId, BankTxType bttId, double txAmount, Timestamp timestamp) {
 		super();
 		this.btId = btId;
 		this.baId = baId;
@@ -54,11 +57,11 @@ public class BankTx {
 		this.baId = baId;
 	}
 
-	public int getBttId() {
+	public BankTxType getBttId() {
 		return bttId;
 	}
 
-	public void setBttId(int bttId) {
+	public void setBttId(BankTxType bttId) {
 		this.bttId = bttId;
 	}
 

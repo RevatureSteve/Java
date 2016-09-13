@@ -25,6 +25,7 @@ public class BankDaoImpl implements BankDao{
 				System.out.println(bankAccount);
 				for(BankTx bankTx : bankAccount.getBankTx()){
 					System.out.println(bankTx);
+					System.out.println(bankTx.getBttId());
 				}
 			}
 			
@@ -41,13 +42,16 @@ public class BankDaoImpl implements BankDao{
 	public BankUser getBankUserById(int id) {
 		Session session = ConnectionUtil.getSession();
 		
-		BankUser bankUser = (BankUser) session.get(BankUser.class, id);
+		BankUser bankUserLoad = (BankUser) session.load(BankUser.class, id);
+		System.out.println(bankUserLoad.getClass() + " -LOAD- pulled in the DAO!");
 		
-		System.out.println(bankUser + " pulled in the DAO!");
+		BankUser bankUserGet = (BankUser) session.get(BankUser.class, id);
+		System.out.println(bankUserGet.getClass() + " -GET- pulled in the DAO!");
+
 
 		
 		session.close();
-		return bankUser;
+		return bankUserGet;
 	}
 	
 	@Override

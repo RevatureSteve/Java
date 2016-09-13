@@ -27,6 +27,7 @@
 		<mapping class="com.revature.domain.BankUser" />
 		<mapping class="com.revature.domain.BankAccount" />
 		<mapping class="com.revature.domain.BankTx" />
+		<mapping class="com.revature.domain.BankTxType" />
 
 	</session-factory>
 </hibernate-configuration>
