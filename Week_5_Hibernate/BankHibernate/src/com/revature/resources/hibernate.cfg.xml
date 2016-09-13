@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- When specifying a Datasource we don't type out the Username & pw here 
+			<property name="hibernate.connection.username">bank_db</property> <property 
+			name="hibernate.connection.password">p4ssw0rd</property> -->
+
+		<!-- DATABASE CONFIGURATION -->
+		<!-- Oracle Drive -->
+
+		<!-- Weblogic Class that references the datasource -->
+		<property name="jndi.class">weblogic.jndi.WLInitialContextFactory</property>
+		<!-- URL OF Datasource -->
+		<property name="jndi.url">t3://localhost:7001</property>
+		<!-- Connection of the JNDI Name -->
+		<property name="connection.datasource"> datasource/bank_db</property>
+
+
+
+		
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.revature.domain.BankUser" />
+		<mapping class="com.revature.domain.BankAccount" />
+		<mapping class="com.revature.domain.BankTx" />
+
+	</session-factory>
+</hibernate-configuration>

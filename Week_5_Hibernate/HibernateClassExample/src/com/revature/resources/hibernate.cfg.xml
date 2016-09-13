@@ -6,6 +6,7 @@
 	<session-factory>
 		<!-- Username -->
 		<property name="hibernate.connection.username">flash_card_db</property>
+		
 		<!-- Password -->
 		<property name="hibernate.connection.password">p4ssw0rd</property>
 		
@@ -18,7 +19,14 @@
 		<!-- Type of DB Dialect -->
 		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
 		
+		<!-- Want to see Hibernate Generate SQL? add this tag -->
+		<property name="hibernate.show_sql">true</property>
+		
+		<!-- Tell Hibernate to Scan for Table Annotations @Entities, @Column, @Id etc. -->
 		<mapping class="com.revature.pojo.FlashCard"/>
+		
+		
+		
 	</session-factory>
 </hibernate-configuration>
 		

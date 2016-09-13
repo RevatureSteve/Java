@@ -22,7 +22,7 @@ public class FlashCard {
 	
 	public FlashCard(){}
 
-
+	
 	public FlashCard(int fcId, String fcQuestion, String fcAnswer) {
 		super();
 		this.fcId = fcId;

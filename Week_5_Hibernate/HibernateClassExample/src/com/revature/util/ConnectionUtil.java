@@ -9,7 +9,7 @@ public class ConnectionUtil {
 	 @SuppressWarnings("deprecation")
 	private static SessionFactory sessionFactory = 
 			 new Configuration()
-			 	.configure("com/revature/resources/hibernate.cfg.xml")
+			 	.configure()
 			 	.buildSessionFactory();
 	
 	 public static Session getSession() {
