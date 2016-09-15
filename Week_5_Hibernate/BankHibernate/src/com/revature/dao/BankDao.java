@@ -12,4 +12,8 @@ public interface BankDao {
 	public BankAccount getBankAccountById(int id);
 	
 	public List<BankUser> retrieveAllBankUsers();
+	
+	public void updateVsMerge();
+	
+	public void saveBankUser(BankUser bankUser);
 }
