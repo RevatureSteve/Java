@@ -1,16 +1,16 @@
 package com.revature.hibernate.main;
 
-import org.hibernate.Session;
-
-import com.revature.hibernate.util.HibernateConnUtil;
+import com.revature.hibernate.dao.BearDaoImpl;
 
 public class App 
 {
     public static void main( String[] args )
     {
-       
-       Session session = HibernateConnUtil.getSession();
-       
-       
+//    	new BearDaoImpl().createBearsDemo();
+//       new BearDaoImpl().criteriaDemo();
+    	new BearDaoImpl().queryDemo();
     }
+    
+    
+  
 }

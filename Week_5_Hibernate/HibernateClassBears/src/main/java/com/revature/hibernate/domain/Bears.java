@@ -59,6 +59,19 @@ public class Bears {
 		this.bearCubs = new HashSet<Bears>();
 	}
 
+	
+	//Straight up bear constructor - Roaming Bear
+	public Bears(String bearColor, String breed, double height, double weight, HoneyPot honeyPot) {
+		this();
+		this.bearColor = bearColor;
+		this.breed = breed;
+		this.height = height;
+		this.weight = weight;
+		this.honeyPot = honeyPot;
+	}
+
+
+
 
 	public Bears(int bearId, String bearColor, String breed, double height, double weight, Cave dwelling,
 			HoneyPot honeyPot) {

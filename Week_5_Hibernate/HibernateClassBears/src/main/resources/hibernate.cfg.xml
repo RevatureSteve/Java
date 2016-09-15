@@ -22,7 +22,7 @@
 		<!-- Want to see Hibernate Generate SQL? add this tag -->
 		<property name="hibernate.show_sql">true</property>
 
-		<property name="hibernate.hbm2ddl.auto">create</property>
+		<property name="hibernate.hbm2ddl.auto">none</property>
 
 		<mapping class="com.revature.hibernate.domain.Bears" />
 		<mapping class="com.revature.hibernate.domain.Cave" />
