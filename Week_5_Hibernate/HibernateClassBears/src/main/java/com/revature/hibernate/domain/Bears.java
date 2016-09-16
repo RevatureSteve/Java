@@ -3,6 +3,7 @@ package com.revature.hibernate.domain;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.Cacheable;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,8 +18,13 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 @Entity
 @Table(name="BEAR")
+@Cache(usage=CacheConcurrencyStrategy.READ_WRITE, region="myAwesomeCache")
+
 public class Bears {
 	@Id
 	@Column(name="bear_id")
@@ -38,16 +44,16 @@ public class Bears {
 	private double weight;
 	
 
-	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
 	@JoinColumn(name="BEAR_HOME")
 	private Cave dwelling;
 	
-	@OneToOne(fetch=FetchType.EAGER)
+	@OneToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="HONEYPOT_ID")
 	private HoneyPot honeyPot;
 	
 	
-	@ManyToMany(fetch=FetchType.EAGER)
+	@ManyToMany(fetch=FetchType.LAZY)
 	@JoinTable(name="PARENT_CUB",
 			joinColumns=@JoinColumn(name="PARENT_ID"),
 			inverseJoinColumns=@JoinColumn(name="CUB_ID"))

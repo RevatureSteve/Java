@@ -24,6 +24,16 @@
 
 		<property name="hibernate.hbm2ddl.auto">none</property>
 
+		<!-- Level 2 Cache -->
+				<!-- CACHE CONFIGURATION -->
+		<!-- Specify Caching Provider -->
+		<property name="net.sf.ehcache.configurationResourceName">/ehcache.xml</property>
+		<property name="hibernate.cache.region.factory_class">net.sf.ehcache.hibernate.EhCacheRegionFactory</property>
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		
+		
+
+
 		<mapping class="com.revature.hibernate.domain.Bears" />
 		<mapping class="com.revature.hibernate.domain.Cave" />
 		<mapping class="com.revature.hibernate.domain.HoneyPot" />

@@ -131,7 +131,9 @@ public class BearDaoImpl implements BearDao{
 	
 	
 	
-	
+	public Bears getBearById(Integer id){
+		return (Bears) HibernateConnUtil.getSession().get(Bears.class, id);
+	}
 	
 
 }
