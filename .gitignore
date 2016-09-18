@@ -8,4 +8,9 @@ target/
 
 build/
 
-*/.metadata/*
+*/.metadata/*	
+
+.recommenders
+.metadata
+*_Code
+*_code
