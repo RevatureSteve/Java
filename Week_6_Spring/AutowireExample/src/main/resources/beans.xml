@@ -2,14 +2,9 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-
-
-	<bean id="empDao" class="com.revature.dao.EmployeeDaoImpl" />
-
-	
-	<bean id="theDaoService" class="com.revature.services.WorkerServices">
-		<property name="edao" ref="empDao" />
-	</bean>
-	
+  
+  <bean id="cat" class="com.ex.service.ServiceImpl" autowire="byName"/>
+  <bean id="dog" class="com.ex.dao.DaoImpl"/>
+  
+  
 </beans>

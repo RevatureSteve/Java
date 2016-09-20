@@ -2,14 +2,11 @@ package com.revature.services;
 
 
 import com.revature.dao.Dao;
-import com.revature.dao.EmployeeDaoImpl;
 import com.revature.model.Worker;
 
 public class WorkerServices {
 
-	private Dao edao = new EmployeeDaoImpl();
-
-	
+	private Dao edao ;
 	
 	public void setEdao(Dao edao) {
 		this.edao = edao;
