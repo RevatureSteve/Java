@@ -1,0 +1,52 @@
+package com.revature.servlet;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.revature.bean.PersonBean;
+
+public class LoginServlet extends HttpServlet {
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
+			throws ServletException, IOException{
+		
+		//Pulled the Session from the request
+		HttpSession session = req.getSession();
+		
+		//Pulled the name & age from the Form
+		String name = req.getParameter("name");
+		int age = Integer.parseInt(req.getParameter("age"));
+		String hobby = req.getParameter("hobby");
+		//Push the information into a PersonBean Object
+		PersonBean personBean = new PersonBean(name, age, hobby);
+		
+		List<PersonBean> pbList = new ArrayList<>();
+		
+		pbList.add(new PersonBean(name, age, hobby));
+		pbList.add(new PersonBean("John", 1, hobby));
+		pbList.add(new PersonBean("Adamn", 2, hobby));
+		pbList.add(new PersonBean("Tim", 3, hobby));
+		pbList.add(new PersonBean("Aym", 4, hobby));
+		
+		
+		
+		//Store PersonBean object into our Session
+		session.setAttribute("personBean", personBean);
+		session.setAttribute("pbList", pbList);
+		System.out.println("Name: " + name + " with age: " + age);
+		
+		
+		//Forward this user to Home.jsp
+		RequestDispatcher rd = req.getRequestDispatcher("Home.jsp");
+		rd.forward(req, resp);
+	}
+}

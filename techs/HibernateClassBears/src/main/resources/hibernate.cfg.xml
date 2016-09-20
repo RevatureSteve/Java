@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Username -->
+		<property name="hibernate.connection.username">bears_db1</property>
+
+		<!-- Password -->
+		<property name="hibernate.connection.password">p4ssw0rd</property>
+
+		<!-- Url -->												<!-- oracle-bear1.cp5mxdxxxdup.us-west-2.rds.amazonaws.com:1521 -->
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@oracle-bear1.cp5mxdxxxdup.us-west-2.rds.amazonaws.com:1521:ORCL</property>
+
+		<!-- Driver -->
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+
+		<!-- Type of DB Dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+		<!-- Want to see Hibernate Generate SQL? add this tag -->
+		<property name="hibernate.show_sql">true</property>
+
+		<property name="hibernate.hbm2ddl.auto">none</property>
+
+		<!-- Level 2 Cache -->
+				<!-- CACHE CONFIGURATION -->
+		<!-- Specify Caching Provider -->
+		<property name="net.sf.ehcache.configurationResourceName">/ehcache.xml</property>
+		<property name="hibernate.cache.region.factory_class">net.sf.ehcache.hibernate.EhCacheRegionFactory</property>
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		
+		
+
+
+		<mapping class="com.revature.hibernate.domain.Bears" />
+		<mapping class="com.revature.hibernate.domain.Cave" />
+		<mapping class="com.revature.hibernate.domain.HoneyPot" />
+
+	</session-factory>
+</hibernate-configuration>

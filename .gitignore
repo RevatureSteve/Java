@@ -9,9 +9,15 @@ target/
 build/
 
 */.metadata/*	
-
-.recommenders
 .metadata
+.recommenders
+*/.plugins/*
 *_Code
 *_code
- 
+
+Week_3_*
+Week_4_*
+.log
+.num
+.sjo
+/.metadata/
