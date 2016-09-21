@@ -1,6 +1,6 @@
-
+*/Servers/*
 /bin/
-
+*/RemoteSystemsTempFiles/*
 
 .settings
 /
@@ -15,9 +15,8 @@ build/
 *_Code
 *_code
 
+Week_1_*
+Week_2_*
 Week_3_*
 Week_4_*
-.log
-.num
-.sjo
-/.metadata/
+Week_5_*
