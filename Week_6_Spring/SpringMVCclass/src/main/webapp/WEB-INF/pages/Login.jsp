@@ -9,6 +9,7 @@
 <title>Spring Login</title>
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+<link href="/SpringMVCclass/resources/css/k_strap.css" rel="stylesheet" />
 </head>
 <body>
 <h1>Welcome, Please Login!</h1>

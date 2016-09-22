@@ -1,0 +1,57 @@
+0. sudo yum update -needed after you first create your EC2
+
+1. wget http://apache.mirrors.ionfish.org/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz
+2. tar -zxvf apache-tomcat.tar.gz
+
+
+3. Download JDK 8 -> upload to EC2 *FROM YOUR LOCAL COMMANDLINE TO EC2"
+	 using pscp 
+pscp -i key.ppk 
+C:\path\to\file ec2-user@you.ip:filename
+
+	*Note refer to EC2-WL12c document*
+
+4. Install java:   sudo rpm -ivh jdk8.rpm
+
+
+5. export JAVA_HOME=/usr/java/jdk1.8.0_101
+
+
+6. export CATALINA_HOME=/home/ec2-user/apache-tomcat-7.0.70
+
+	test using: echo $CATALINA_HOME 
+
+
+7. Add a user in tomcat-users.xml 
+	manager-gui role
+ cd tomcat-dir/conf
+ 
+	nano tomcat-users.xml
+	
+Add entries:
+
+	<role rolename="manager-gui" />
+	
+<user username="tomcat" password="welcome1"
+ roles="manager-gui" />
+
+
+8. Start Tomcat with nohup
+ sudo nohup sh $CATALINA_HOME/bin/startup.sh &
+
+	*can also try 
+9. Visit Tomcat portal with 
+http://you.ec2.public.ip:8080/manager/html
+
+
+--------------------------------------------------------------------------
+Get Jenkins
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+
+sudo yum install jenkins -y
+
+sudo su root -to get root access..
+
+

@@ -9,9 +9,13 @@
 	
 	<!-- Search for Spring Beans -->
 	<context:component-scan base-package="com.revature"></context:component-scan>
-	
+
 	<!-- Searches for @Controller, @RequestMapping etc. -->
 	<mvc:annotation-driven />
+	
+	<!-- Tell DispatcherServlet where are our Static Resources -->
+	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
+	
 
 	<!-- Configure the ViewResolver -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
