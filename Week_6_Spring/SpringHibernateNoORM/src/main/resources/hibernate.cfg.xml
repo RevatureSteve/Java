@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- When specifying a Datasource we don't type out the Username & pw here 
+			<property name="hibernate.connection.username">bank_db</property> <property 
+			name="hibernate.connection.password">p4ssw0rd</property> -->
+
+		<!-- DATABASE CONFIGURATION -->
+		<!-- Username -->
+		<property name="hibernate.connection.username">bank_db</property>
+
+		<!-- Password -->
+		<property name="hibernate.connection.password">p4ssw0rd</property>
+
+		<!-- Url -->												
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+
+		<!-- Driver -->
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+
+		<!-- Type of DB Dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.revature.model.BankUser" />
+		<mapping class="com.revature.model.BankAccount" />
+		<mapping class="com.revature.model.BankTx" />
+		<mapping class="com.revature.model.BankTxType" />
+
+	</session-factory>
+</hibernate-configuration>
