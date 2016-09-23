@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.8.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+
+	<context:component-scan base-package="com.ex"></context:component-scan>
+	<mvc:annotation-driven></mvc:annotation-driven>
+	
+	<tx:annotation-driven/>
+	
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"></property>
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
+		<property name="username" value="flash_card_db"></property>
+		<property name="password" value="p4ssw0rd"></property>
+	</bean>
+	
+	<bean id="hibernateJpaVendorAdapter" 
+			class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"></bean>
+			
+	<bean id="entityManagerFactory" 
+			class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+			
+			<property name="dataSource" ref="dataSource"></property>
+			<property name="packagesToScan" value="com.ex"></property>
+			<property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter"></property>
+			<property name="jpaProperties">
+				<props>
+					<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+					<prop key="hibernate.show_sql">true</prop>
+					<prop key="hibernate.format_sql">true</prop>
+					<prop key="hibernate.hbm2ddl.auto">create</prop>
+				</props>
+			</property>
+	</bean>
+	
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory"></property>
+	</bean>
+	
+	<jpa:repositories base-package="com.ex"></jpa:repositories>
+	
+
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/pages/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	<bean id="roleHandler" class="com.ex.day5.secure.AuthSuccessHandler" ></bean>
+
+	<security:http auto-config="true" use-expressions="true">
+		<security:intercept-url pattern="/admin**" access="hasRole('ROLE_ADMIN')"/>
+		<security:intercept-url pattern="/dba**" access="hasRole('ROLE_DBA')"/>
+		
+		<security:form-login authentication-success-handler-ref="roleHandler" />
+		<security:logout/>
+		
+		<security:csrf disabled="true" />
+	</security:http>
+	
+	<security:authentication-manager>
+		<security:authentication-provider>
+			<security:user-service>
+				<security:user name="Tom" password="1234" authorities="ROLE_USER" />
+				<security:user name="Mike" password="1234" authorities="ROLE_ADMIN"/>
+				<security:user name="John" password="12345" authorities="ROLE_DBA"/>
+			</security:user-service>
+		</security:authentication-provider>
+	</security:authentication-manager>
+
+</beans>
