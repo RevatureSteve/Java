@@ -10,26 +10,23 @@
 <body data-ng-app="todoListApp">
 <h1>Welcome to AngularJS</h1>
 
-
 	<h2>Todo List</h2>
-																			
-	<div id="mainCtrl" data-ng-controller="mainCtrl" class="list" >
-		<div class="item"  ng-class="{'editing-item':editing, 'edited':todo.edited}"   ng-repeat="todo in todos" >
-			<input type="checkbox" />
-			
-			<label class="editing-label" ng-hide="editing">{{todo.name}}</label>
-<input class="editing-label" type="text" ng-change="todo.edited = true;" ng-blur="editing =false;" ng-show="editing" ng-model="todo.name"/>
-			
-			<a href=""  ng-click=" editing = !editing">Edit</a>
-			<a href="" >Save</a>
-			<a href="" >Delete</a>
+	<div id="mainCtrl" data-ng-controller="mainCtrl" >
+		<a href="" ng-click="helloworld()">Click Me</a>
+		<a href="" ng-click="helloworld()">Click Me1</a>
+		<div id="childCtrl" ng-controller="childofMainCtrl">
+			<a href="" ng-click="flashSmile()">Click Me2</a>
+			<a href="" ng-click="helloworld()">Click Me3</a>
+			{{myVar}}
 		</div>
 	</div>
+	<br />
 	
 	
+	<div ng-controller="siblingCtrl">
+		<a href="" ng-click="sibOfMainCtrl()">Sib Click me</a>
+	</div>
 	
-	
-	<!-- Scripts for AngularJS -->
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
 

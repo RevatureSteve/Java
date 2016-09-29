@@ -12,6 +12,16 @@ angular.module('todoListApp',[])  //[] tells angular to create a project with th
 		
 		$scope.myVar = 123123;
 		
-		$scope.todos = [{'name':'clean board'},{'name':'be awesome'},{'name':'Nevermind too Awesome Already'}]
-		
+	})
+	
+	.controller('siblingCtrl', function($scope){
+		$scope.sibOfMainCtrl = function(){
+			console.log("Hello Sibling")
+		};
+	})
+	
+	.controller('childofMainCtrl', function($scope){
+		$scope.flashSmile = function(){
+			console.log(" : ) ")
+		}
 	})
