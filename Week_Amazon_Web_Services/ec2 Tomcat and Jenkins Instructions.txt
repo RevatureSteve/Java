@@ -1,0 +1,114 @@
+****
+Note turn off EC2 not in use, should only have 1 running or you will be charged
+for going over 750 hours per month
+
+Even with RDS -750 hours running time, only use one at time!
+****
+
+---------------------
+Belows are steps for after you SSH into your EC2 Instance through putty
+One for Tomcat EC2 and one for setting up Jenkins EC2
+---------------------
+
+EC2 for Tomcat7
+
+0. sudo yum update -needed after you first create your EC2
+
+1. wget http://apache.mirrors.ionfish.org/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz
+2. tar -zxvf apache-tomcat.tar.gz *note check the name of your tomcat.gz
+
+   
+3. Download JDK 8 -> upload to EC2 *FROM YOUR LOCAL COMMANDLINE TO EC2"
+	 using pscp 
+pscp -i key.ppk 
+C:\path\to\file ec2-user@you.ip:filename
+
+	*Note refer to EC2-WL12c document*
+
+4. Install java:   sudo rpm -ivh jdk8.rpm
+ *note-check the name of your rpm...
+
+5. export JAVA_HOME=/usr/java/jdk1.8.0_101
+
+
+6. export CATALINA_HOME=/home/ec2-user/apache-tomcat-7.0.70
+ *note check the name of your tomcat
+	test using: echo $CATALINA_HOME 
+
+
+7. Add a user in tomcat-users.xml 
+	manager-gui role
+ cd tomcat-dir/conf
+ 
+	nano tomcat-users.xml
+	
+Add entries:
+
+	<role rolename="manager-gui" />
+	
+<user username="tomcat" password="welcome1"
+ roles="manager-gui" />
+
+
+8. Start Tomcat with nohup
+ sudo nohup sh $CATALINA_HOME/bin/startup.sh &
+
+	*can also try sudo sh $CATALINA_HOME/bin/startup.sh &
+
+
+9. Visit Tomcat portal with 
+http://your-ec2.ip:8080/manager/html
+ie
+	http://ec2-52-89-22-227.us-west-2.compute.amazonaws.com:8080/
+
+--------------------------------------------------------------------------
+EC2 for Jenkins
+JENKINS NEEDS - Java, Git, and Maven installed
+0. sudo yum update -needed after you first create your EC2
+--install maven
+sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+sudo yum install -y apache-maven
+mvn --version
+--------------
+--install git
+sudo yum install git
+--------------
+--install java from rpm file
+3. Download JDK 8 -> upload to EC2 *FROM YOUR LOCAL COMMANDLINE TO EC2"
+	 using pscp 
+pscp -i key.ppk 
+C:\path\to\file ec2-user@you.ip:filename
+
+	*Note refer to EC2-WL12c document*
+
+4. Install java:   sudo rpm -ivh jdk8.rpm
+ *note-check the name of your rpm...
+--------------
+Get Jenkins
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+
+sudo yum install jenkins -y
+
+sudo service jenkins start
+
+check at 
+aws-url:8080/
+ie
+http://ec2-52-89-22-227.us-west-2.compute.amazonaws.com:8080/
+
+
+
+--Plugin
+Maven Integration plugin
+
+slack
+
+Configure System
+slack info
+maven/git
+sudo su root -to get root access..
+
+
