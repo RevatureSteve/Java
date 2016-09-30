@@ -17,11 +17,18 @@ angular.module('todoListApp',[])  //[] tells angular to create a project with th
 //		$scope.todos = [{'name':'clean board'},{'name':'be awesome'},{'name':'Nevermind too Awesome Already'}]
 		
 		$scope.getTodos = dataService.getTodos(
+							//Passed in the Callback Function
 							function(response){
 								console.log(response.data)
 								$scope.todos = response.data;
 							})	
-		
+							
+							
+		$scope.saveTodo = function(todo){
+							console.log('About to save ' + todo.name)
+							dataService.saveTodo(todo);
+							
+						}
 	})
 
 	/*
@@ -34,11 +41,23 @@ angular.module('todoListApp',[])  //[] tells angular to create a project with th
 	*
 	*/
 	
-	.service('dataService', function($http){
+	.service('dataService', function($http,$q){
 		this.helloConsole = function(){
 			console.log('this is the service function');
 		}
 		this.getTodos = function(callback){
-			$http.get('resources/js/todos.json').then(callback)
+			$http.get('resources/js/todos.json').then(callback) //callback is the function that take a Response
 		}
+		
+		this.saveTodo = function(todo){
+			$http.post('rest/save',todo).then(
+					function(response){
+						console.log(response + ' YAY!');
+					},
+					function(error){
+						console.log( $q.reject(error) );
+					}	
+			)
+		}
+		
 	})
