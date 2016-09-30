@@ -1,3 +1,0 @@
-C\:/Users/Steve_Revature/my_git_repos/1608_Aug15_Java_Steven/Week_4_JavaScript/MasterWebProject/WebContent = MasterWebProject.war
-C\:/Users/Steve_Revature/my_git_repos/1608_Aug15_Java_Steven/Week_4_JavaScript/.metadata/.plugins/org.eclipse.core.resources/MasterWebProject/build/weboutput = MasterWebProject.war
-C\:/Users/Steve_Revature/my_git_repos/1608_Aug15_Java_Steven/Week_4_JavaScript/MasterWebProject/build/classes = MasterWebProject.war/WEB-INF/classes

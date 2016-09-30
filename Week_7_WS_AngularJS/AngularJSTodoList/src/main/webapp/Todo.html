@@ -15,13 +15,14 @@
 																			
 	<div id="mainCtrl" data-ng-controller="mainCtrl" class="list" >
 		<div class="item"  ng-class="{'editing-item':editing, 'edited':todo.edited}"   ng-repeat="todo in todos" >
+			
 			<input type="checkbox" />
 			
 			<label class="editing-label" ng-hide="editing">{{todo.name}}</label>
 <input class="editing-label" type="text" ng-change="todo.edited = true;" ng-blur="editing =false;" ng-show="editing" ng-model="todo.name"/>
 			
 			<a href=""  ng-click=" editing = !editing">Edit</a>
-			<a href="" >Save</a>
+			<a href="" ng-click="helloConsole()">Save</a>
 			<a href="" >Delete</a>
 		</div>
 	</div>

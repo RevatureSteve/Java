@@ -10,7 +10,7 @@
 <body>
 	<div>
 		<c:out value="${ personBean.name }"></c:out>
-		<c:out value="${ personBean.age }"></c:out>
+		<c:out value="${  personBean.age }"></c:out>
 		<c:if test="${ personBean.hobby == 'Java' }">
 			<h1>Yes you selected the right choice!</h1>
 		</c:if>

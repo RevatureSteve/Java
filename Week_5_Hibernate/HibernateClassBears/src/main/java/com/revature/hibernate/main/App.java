@@ -9,9 +9,9 @@ public class App
 //    	new BearDaoImpl().createBearsDemo();
 //       new BearDaoImpl().criteriaDemo();
 //    	new BearDaoImpl().queryDemo();
-    	new BearDaoImpl().getBearById(50);
+    	System.out.println(new BearDaoImpl().getBearById(55).getBearColor());
     	System.out.println("One");
-    	new BearDaoImpl().getBearById(50);
+    	new BearDaoImpl().getBearById(55);
     }
     
     
