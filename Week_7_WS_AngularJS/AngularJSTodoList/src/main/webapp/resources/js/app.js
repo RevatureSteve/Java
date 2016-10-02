@@ -26,8 +26,8 @@ angular.module('todoListApp',[])  //[] tells angular to create a project with th
 							
 		$scope.saveTodo = function(todo){
 							console.log('About to save ' + todo.name)
-							dataService.saveTodo(todo);
 							
+							$scope.updateTask = dataService.saveTodo(todo);
 						}
 	})
 
@@ -50,7 +50,7 @@ angular.module('todoListApp',[])  //[] tells angular to create a project with th
 		}
 		
 		this.saveTodo = function(todo){
-			$http.post('rest/save',todo).then(
+			var promise = $http.post('rest/save',todo).then(
 					function(response){
 						console.log(response + ' YAY!');
 					},
